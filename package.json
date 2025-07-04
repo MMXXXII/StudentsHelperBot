@@ -1,0 +1,23 @@
+{
+  "name": "telegram-study-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for managing study groups and tasks",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "dev": "nodemon src/bot.js",
+    "migrate": "node src/database/migrate.js"
+  },
+  "dependencies": {
+    "canvas": "^3.1.2",
+    "dotenv": "^17.0.1",
+    "moment": "^2.30.1",
+    "mysql2": "^3.14.1",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
