@@ -84,11 +84,11 @@ function setupCommands(bot) {
         return
       }
 
+      // Убираем дублирование - оставляем только один вызов
       const adminKeyboard = {
         inline_keyboard: [
           [{ text: "👥 Управление ролями", callback_data: "admin_roles" }],
           [{ text: "📝 Заявки на группы", callback_data: "admin_group_requests" }],
-          [{ text: "📚 Заявки на предметы", callback_data: "admin_subject_requests" }],
           [{ text: "🔙 Назад", callback_data: "back_to_groups" }],
         ],
       }
